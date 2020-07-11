@@ -1,0 +1,19 @@
+{
+    "name": "dome6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest-webpack",
+        "eslint_init": "eslint --init"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-loader": "^4.0.2",
+        "jest": "^25.5.4",
+        "jest-webpack": "^0.5.1"
+    }
+}

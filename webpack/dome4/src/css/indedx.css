@@ -1,0 +1,9 @@
+        body {
+            background-color: blue;
+        }
+        
+        .box {
+            width: 400px;
+            height: 400px;
+            background: url(../image/1.jpeg) no-repeat;
+        }

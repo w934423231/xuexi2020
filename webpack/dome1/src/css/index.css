@@ -1,0 +1,6 @@
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        transition: all 0.1s;
+    }

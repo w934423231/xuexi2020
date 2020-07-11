@@ -1,0 +1,12 @@
+FROM centos
+
+RUN yum update -y && yum upgrade -y&& yum install nginx -y && yum install net-tools -y && yum install keepalived -y
+
+COPY ./keepalived.conf /etc/keepalived/
+
+COPY ./nginx_check.sh /usr/local/src/
+
+EXPOSE 80
+
+
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,12 @@
+FROM archlinux
+
+RUN pacman -Syy --noconfirm && pacman -S nginx --noconfirm && pacman -S keepalived  --noconfirm && sed -i "/keepalive_timeout\s 65/a\types_hash_max_size 4098;" /etc/nginx/nginx.conf && sed -i '/types_hash_max_size\s 4098;/a types_hash_bucket_size 256;' /etc/nginx/nginx.conf
+
+COPY ./keepalived.conf /etc/keepalived/
+
+COPY ./nginx_check.sh /usr/local/src/
+
+EXPOSE 80
+
+
+CMD ["nginx", "-g", "daemon off;"]

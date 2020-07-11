@@ -1,0 +1,269 @@
+body {
+  font-family: '微软雅黑';
+}
+
+.pc_main {
+  width: 1200px;
+  height: 893px;
+  margin: 60px auto;
+}
+
+.main_left {
+  width: 304px;
+  height: 384px;
+  background: url(./image/bg_about.png) no-repeat;
+  position: relative;
+  display: table;
+  float: left;
+}
+
+.main_left>h3 {
+  font-size: 36px;
+  color: white;
+  padding-left: 40px;
+  margin: 60px 0px 12px 0px;
+}
+
+.main_left>span {
+  margin-left: 40px;
+  display: block;
+}
+
+.main_left>span>span {
+  font-size: 18px;
+  color: #fffefe;
+  font-family: ArnoPro-Regular12pt;
+  text-transform: uppercase;
+}
+
+.main_left img {
+  margin: 0px 10px 0px 15px;
+  vertical-align: middle;
+}
+
+.main_left div {
+  width: 289px;
+  position: absolute;
+  top: 185px;
+  left: 42px;
+  padding: 40px;
+  z-index: 8888;
+  background: white;
+  box-shadow: 0px 6px 27px 6px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.main_left div h3 {
+  color: #222222;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.main_left div p {
+  line-height: 26px;
+  color: #666666;
+  overflow: hidden;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  margin: 26px 0px;
+  float: left;
+}
+
+.main_left div a {
+  display: block;
+  width: 120px;
+  height: 41px;
+  line-height: 41px;
+  font-size: 14px;
+  background-color: #3056b5;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-top: 35px;
+  float: right;
+}
+
+.main_right {
+  /* width: 834px; */
+  /* height: 400px; */
+  float: right;
+}
+
+.main_right_top {
+  /* width: 834px; */
+  height: 138px;
+}
+
+.main_right_top div:first-of-type {
+  width: 58px;
+  height: 57px;
+  float: left;
+}
+
+.main_right_top div:last-of-type {
+  width: 750px;
+  float: right;
+}
+
+.main_right_top li {
+  width: 138px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #2d75d0;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  text-align: center;
+  margin-right: 12px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -ms-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  float: left;
+}
+
+.main_right_top li:hover {
+  background-color: red;
+}
+
+.main_right_top a {
+  color: white;
+  font-family: '微软雅黑';
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main_right_bottom {
+  width: 834px;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.main_right_bottom ul {
+  width: 2502px;
+}
+
+.main_right_bottom li {
+  float: left;
+}
+
+.main_right_bottom img {
+  width: 100%;
+}
+
+.main_right_bottom div {
+  width: 130px;
+  height: 61px;
+  position: absolute;
+  top: 80%;
+  right: 20px;
+  z-index: 88888;
+}
+
+.main_right_bottom span {
+  display: block;
+  width: 61px;
+  height: 61px;
+  float: left;
+  margin-left: 3px;
+}
+
+.main_right_bottom div span:first-of-type {
+  background: url(./image/l.png);
+}
+
+.main_right_bottom div span:last-of-type {
+  background: url(./image/r.png);
+}
+
+@media(max-width:1280px) {
+  .pc_main {
+    width: 1024px;
+  }
+  .main_right {
+    width: 680px;
+  }
+  .main_right_top div:last-of-type {
+    width: 680px;
+  }
+  .main_right_bottom {
+    width: 674px;
+    /* height: 419px; */
+  }
+  .main_right_bottom ul {
+    width: 2030px;
+  }
+  .main_right_bottom img {
+    width: 674px;
+  }
+}
+
+@media(max-width:1024px) {
+  .pc_main {
+    display: none;
+  }
+  .phone_main {
+    width: 94%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .phone_box {
+    background-color: #fff;
+    padding: 20px 0 15px;
+  }
+  .phone_box_top {
+    text-align: center;
+  }
+  .phone_box_top h3 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 13px
+  }
+  .phone_box_top span {
+    color: 555;
+    font-size: 16px;
+    display: block;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .phone_box_top span::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 5px;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 0;
+    background: #154fb1
+  }
+  .phone_box_bottom {
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+    text-indent: 2em;
+    padding-bottom: 20px;
+  }
+  .phone_box_bottom h3 {
+    font-weight: normal
+  }
+  .phone_box_bottom p {
+    margin: 36px 0px;
+  }
+}

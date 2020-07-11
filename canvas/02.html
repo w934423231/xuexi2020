@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas width="600" height="600"></canvas>
+</body>
+
+</html>
+<script>
+  window.onload = function() {
+    var Ocanvas = document.getElementsByTagName('canvas')[0];
+    var ctx = Ocanvas.getContext('2d')
+    for (var i = 0; i < 100; i++) {
+      ctx.moveTo(0, i * 20)
+      ctx.lineTo(600, i * 20)
+      ctx.moveTo(i * 20, 0)
+      ctx.lineTo(i * 20, 600)
+      ctx.stroke()
+    }
+  }
+</script>
